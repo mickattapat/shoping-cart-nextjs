@@ -1,0 +1,126 @@
+/* Header */
+@media screen and (min-width: 992px) {
+    .top_header, .content {
+        padding: 0 150px;
+    } 
+    .nav_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 76px;
+    }
+    .nav_mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .top_header, .content {
+        padding: 0 40px;
+    }
+    .nav_header {
+        display: none;
+    }
+    .nav_mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 76px;
+    }
+    .right_nav {
+        display: flex;
+    }
+    .total_item_mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background-color: #1A586A;
+        width: 16px;
+        height: 16px;
+        border-radius: 50px;
+        top: 3px;
+        left: 38px;
+    }
+}
+
+.top_header {
+    height: 76px;
+    background: #FF6F61;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav_link {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+.nav_link li {
+    text-decoration: none;
+    padding: 0 25px;
+}
+.nav_link a {
+    color: #F9F9F9;
+    font-size: 16px;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.nav_link a:hover {
+    color: #F9F9F9;
+    border-bottom: 3px solid #F9F9F9;
+}
+
+.cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 12px;
+    color: #F9F9F9;
+    width: 77px;
+    position: relative;
+    cursor: pointer;
+}
+
+.cart span {
+    margin-left: 10px;
+}
+
+.total_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: #1A586A;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    top: 3px;
+    right: 38px;
+}
+
+
+/* content */
+
+.content {
+    min-height: calc(100vh - (76px + 54px));
+  }
+
+/* Footer */
+
+.bottom_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #F5F5F5;
+    height: 54px;
+    background: #1A586A;
+} 
